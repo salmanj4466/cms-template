@@ -428,7 +428,7 @@
   color: #c7583b;
 }
 
-.course-area .feature-card {
+.course-area.programme-section .feature-card {
   min-height: 615px;
   margin-bottom: 0;
 }
@@ -1887,7 +1887,7 @@ footer .footer-bottom a:hover {
     width: 100%;
   }
 
-  .course-area .feature-card {
+  .course-area.programme-section .feature-card {
     min-height: auto;
   }
 }
