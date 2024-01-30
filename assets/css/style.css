@@ -1344,7 +1344,7 @@ hero css
 }
 
 .hero-search .form-control {
-  padding: 14px 130px 14px 45px;
+  padding: 14px 100px 14px 45px;
   box-shadow: none;
   border: none;
   border-radius: 8px;
@@ -2061,6 +2061,7 @@ course css
 
 .course-widget .form-check-label {
   color: #53545b;
+  font-size: 14px;
 }
 
 .course-widget .course-rating-filter label i {
@@ -2389,11 +2390,8 @@ course css
   padding-left: 34px;
   text-align: left;
   position: relative;
-}
-
-.course-single-list li i {
-  margin-right: 10px;
-  color: #c7583b;
+  font-size: 14px;
+  color: #707070;
 }
 
 .course-single-curriculum .accordion-item {
@@ -3056,7 +3054,7 @@ step css
 }
 
 .step-area .theme-btn {
-  min-width: 300px;
+  max-width: 340px;
   position: relative;
   font-size: 20px;
 }
@@ -4137,7 +4135,6 @@ team css
   border-radius: 10px;
   background: #fff;
   height: 320px;
-  width: 100%;
   object-fit: cover;
   box-shadow: 0 0 12px #00000026;
 }
@@ -4265,7 +4262,6 @@ team css
   width: 100%;
   object-fit: cover;
   /* box-shadow: 0 0 12px #00000026; */
-  padding-top: 50px;
 }
 
 .team-details {

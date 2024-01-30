@@ -109,6 +109,10 @@
   font-size: 18px !important;
 }
 
+.font-20 {
+  font-size: 20px !important;
+}
+
 .fw-semibold {
   font-weight: 500;
 }
@@ -244,6 +248,17 @@
   padding: 3px 10px;
   font-size: 12px;
   border-radius: 6px;
+}
+
+.feature-card .card-tags {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.feature-card .card-tags .btn {
+  top: 0;
+  left: 0;
 }
 
 .card-bottom {
@@ -434,26 +449,13 @@
 }
 
 .course-area.our-program .feature-card {
-  min-height: 580px;
+  min-height: 615px;
 }
 
 .course-single-sidebar-wrapper .theme-btn {
   padding: 6px 20px;
   text-transform: inherit;
   line-height: 22px;
-}
-
-.course-single-list span {
-  color: #c7583b;
-  background: #c7583b47;
-  display: inline-block;
-  min-width: 25px;
-  height: 25px;
-  line-height: 25px;
-  font-weight: 600;
-  border-radius: 3px;
-  text-align: center;
-  font-size: 13px;
 }
 
 .course-single-list {
@@ -469,7 +471,7 @@
   position: absolute;
   left: 12px;
   top: 0;
-  z-index: -1;
+  z-index: 1;
 }
 
 ol.course-single-list {
@@ -762,7 +764,7 @@ ul.course-single-list li:before {
   cursor: context-menu;
 }
 
-.faq-area .accordion-button a {
+.faq-area .accordion-button small {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -831,7 +833,6 @@ footer h5 {
   color: #4c7a93;
   font-size: 18px;
   margin-bottom: 15px;
-  text-transform: uppercase;
   min-height: 53px;
   font-weight: 600;
 }
@@ -845,7 +846,6 @@ footer a {
   font-size: 14px;
   font-weight: 500;
   color: #333333;
-  text-transform: uppercase;
 }
 
 footer a:hover {
@@ -903,6 +903,10 @@ footer .form-control::placeholder {
   font-size: 13px;
 }
 
+footer .text-danger {
+  margin-top: 20px;
+}
+
 /* footer .btn-success {
   position: absolute;
   right: 6px;
@@ -931,6 +935,7 @@ footer .footer-bottom {
 footer .footer-bottom p,
 footer .footer-bottom a {
   color: #9f9d9d;
+  font-size: 13px;
 }
 
 footer .footer-bottom a {
@@ -1095,7 +1100,7 @@ footer .footer-bottom a:hover {
 }
 
 .our-program .filter-item {
-  margin-bottom: 70px !important;
+  margin-bottom: 40px !important;
 }
 
 .step-area .main-heading {
@@ -1144,15 +1149,24 @@ footer .footer-bottom a:hover {
 }
 
 .mechanism-text .accordion-header button {
-  color: #000;
+  color: #c7583b;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 20px;
   background: #fff;
   box-shadow: none;
 }
 
 .mechanism-text .accordion-body {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.mechanism-text .accordion-body p {
+  color: #707070;
+  font-size: 14px;
+}
+
+.mechanism-text .accordion-body h5 {
+  font-size: 20px;
 }
 
 .video-area iframe {
@@ -1191,6 +1205,28 @@ footer .footer-bottom a:hover {
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.rounded-circle-without {
+  border-radius: 0 !important;
+}
+
+.object-fit-contain {
+  object-fit: contain !important;
+}
+
+.connect-paragraph {
+  color: #4c7a93;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  min-height: 100px;
+  line-height: 20px;
+  margin-bottom: 0;
 }
 
 .offcanvas {
@@ -1561,6 +1597,10 @@ footer .footer-bottom a:hover {
   padding: 6px 40px;
 }
 
+.footer-company-logo a {
+  display: block;
+}
+
 .footer-company-logo li {
   padding: 6px 25px;
 }
@@ -1593,6 +1633,106 @@ footer .footer-bottom a:hover {
 .child-tree .course-single-list:before {
   left: 37px;
   z-index: 1;
+}
+
+.course-single-content .episode-block {
+  top: 13%;
+}
+
+.course-single-content .episode-block h4 {
+  font-size: 12px;
+}
+
+.course-single-content .episode-block h3 {
+  font-size: 30px;
+}
+
+.course-single-content .episode-block img {
+  width: 25px !important;
+}
+
+.course-single-content .overlay-bg:before {
+  width: 76px;
+}
+
+.download-btn .btn {
+  border: 1px solid #eff0f1;
+  padding: 16px 14px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px #00000014;
+  margin-bottom: 15px;
+}
+
+.download-btn .btn:hover {
+  background: transparent;
+  box-shadow: 0 0 10px #0000001c;
+}
+
+.feedack-media {
+  background-size: cover;
+  background-position: center;
+  padding: 200px 20px;
+  position: relative;
+}
+
+.feedack-media:after {
+  content: "";
+  background: #000000b8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.feedack-media-iframe {
+  padding: 15px;
+}
+
+.feedack-media .course-single-sidebar,
+.feedack-media-iframe .course-single-sidebar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px !important;
+  margin-top: -85px !important;
+  max-width: 350px;
+  margin: 0 auto;
+  z-index: 9;
+}
+
+.account-prefernce {
+  padding: 50px 0 120px;
+}
+
+.account-prefernce .select2-selection__rendered {
+  text-align: center;
+}
+
+.account-prefernce .login-form {
+  background: #ffffff3d;
+}
+
+.account-prefernce .login-form .login-btn {
+  width: 250px;
+  margin: 20px auto 30px;
+}
+
+.account-prefernce .login-form .login-header img {
+  width: 240px;
+}
+
+.account-prefernce h4 {
+  font-weight: 500;
+  font-size: 22px;
+  color: #5e5a5a;
+}
+
+.login-form .form-label {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
 }
 
 /* Media query */
@@ -1770,7 +1910,6 @@ footer .footer-bottom a:hover {
 
   .step-area .theme-btn {
     min-width: 230px;
-    text-align: left;
     font-size: 16px;
   }
 
@@ -2203,6 +2342,44 @@ footer .footer-bottom a:hover {
     font-size: 11px;
     line-height: 14px;
   }
+
+  .hero-search .form-control {
+    padding: 12px 90px 11px 32px;
+  }
+
+  .hero-search .form-control::placeholder {
+    font-size: 13px;
+  }
+
+  .hero-search button {
+    font-size: 13px;
+  }
+
+  .hero-search i {
+    left: 10px;
+    font-size: 15px;
+  }
+
+  .feedack-media {
+    padding: 150px 15px;
+  }
+
+  .feedack-media-iframe {
+    padding: 15px;
+  }
+
+  .feedack-media .course-single-sidebar-wrapper {
+    max-width: 300px;
+    margin-left: 25px;
+  }
+
+  .account-prefernce {
+    padding: 50px 0 70px;
+  }
+
+  .account-prefernce h2 {
+    font-size: 24px;
+  }
 }
 
 .select2.select2-container {
@@ -2385,4 +2562,8 @@ footer .footer-bottom a:hover {
     font-weight: 600;
     line-height: 38px;
   }
+}
+
+.video-area .ytp-pause-overlay {
+  display: none !important;
 }
